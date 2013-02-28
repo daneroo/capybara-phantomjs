@@ -13,7 +13,7 @@ end
 When /^I wait (\d+) seconds?$/ do |seconds|
   sleep seconds.to_i
   stamp = Time.now.strftime("%Y%m%d%H%M%S");
-  save_screenshot("/Users/daniel/Code/Sologlobe/standalone-cucumber/screen-#{stamp}.png")
+  save_screenshot("screen-#{stamp}.png")
 end
 
 Then /^I should see "([^"]*)"$/ do |text|

@@ -1,5 +1,7 @@
 = Standalone Cucumber Test Suite
 
+I tweaked the upstream [repo](https://github.com/thuss/standalone-cucumber), to make it work with poltergeist/phantomjs.
+
 == Introduction
 
 Sometimes you inherit a non Rails or non Rack based web app such as PHP, Perl, Java / JEE, etc. I like using cucumber for functional testing so I put together this project structure to use as a starting point for testing non Ruby web based applications.
@@ -25,9 +27,15 @@ Pull requests with updates/enhancements/bug fixes are always welcome!
 
 * sudo bundle install
 
-or instead for me:
-* rvm use ruby-1.9.2@standalone-cucumber --create
-* rvm gemset empty standalone-cucumber
+Sincle I have an rvmrc file,
+* bundle install
+* rake
+
+or by hand before,...:
+* rvm use ruby-1.9.2@capybara-phantomjs --create
+* rvm gemset empty capybara-phantomjs
+* rvm gemset delete capybara-phantomjs
+* rvm gemset create capybara-phantomjs
 * bundle install
 * bundle exec rake
 

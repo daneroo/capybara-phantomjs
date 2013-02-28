@@ -1,0 +1,3 @@
+rvm use ruby-1.9.2@capybara-phantomjs --create
+
+alias rake="bundle exec rake"

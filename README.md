@@ -1,8 +1,8 @@
-= Standalone Cucumber Test Suite
+# Standalone Cucumber Test Suite
 
 I tweaked the upstream [repo](https://github.com/thuss/standalone-cucumber), to make it work with poltergeist/phantomjs.
 
-== Introduction
+## Introduction
 
 Sometimes you inherit a non Rails or non Rack based web app such as PHP, Perl, Java / JEE, etc. I like using cucumber for functional testing so I put together this project structure to use as a starting point for testing non Ruby web based applications.
 
@@ -10,20 +10,20 @@ I've included a simple search.feature examples that uses Google. To switch to us
 
 Pull requests with updates/enhancements/bug fixes are always welcome!
 
-== Project Layout
+## Project Layout
 
 * features/*.feature : cucumber features
 * features/step_definitions/web_steps.rb : generic steps that apply to all features
 * features/step_definintions/[feature]_steps.rb : steps specific to an individual feature file
 * support/env.rb : configures the driver and the hostname to use
 
-== Prerequisites
+## Prerequisites
 
 * Ruby http://www.ruby-lang.org/en/downloads/
 * Ruby Gems http://rubygems.org/
 * Bundler: sudo gem install bundler rake
 
-== Configuration
+## Configuration
 
 * sudo bundle install
 
@@ -39,21 +39,21 @@ or by hand before,...:
 * bundle install
 * bundle exec rake
 
-== Running Features
+## Running Features
 
 * To run all features: rake
 * To run a specific feature: cucumber features/search.feature
 
-== Debugging
+# Debugging
 
 * To debug a specific step call save_and_open_page within the step
 
-== Additional Documentation
+## Additional Documentation
 
 * http://cukes.info (for general cucumber information)
 * http://github.com/jnicklas/capybara (for actions such as click_link, click_button, etc...)
 
-== Contributors
+## Contributors
 
 * {Cucumber mailing list for the project structure}[http://groups.google.com/group/cukes/browse_thread/thread/297163800eaf2968?pli=1]
 * {Todd Huss}[http://gabrito.com]

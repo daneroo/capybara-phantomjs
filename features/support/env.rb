@@ -2,6 +2,13 @@ begin require 'rspec/expectations'; rescue LoadError; require 'spec/expectations
 require 'capybara' 
 require 'capybara/dsl' 
 require 'capybara/cucumber'
-Capybara.default_driver = :selenium
+require 'capybara/poltergeist'
+
+# Capybara.default_driver = :selenium
+
+# Capybara.javascript_driver = :poltergeist
+Capybara.default_driver = :poltergeist 
+
+
 Capybara.app_host = 'http://www.google.com' 
 World(Capybara) 

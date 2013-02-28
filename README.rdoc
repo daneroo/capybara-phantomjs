@@ -25,6 +25,12 @@ Pull requests with updates/enhancements/bug fixes are always welcome!
 
 * sudo bundle install
 
+or instead for me:
+* rvm use ruby-1.9.2@standalone-cucumber --create
+* rvm gemset empty standalone-cucumber
+* bundle install
+* bundle exec rake
+
 == Running Features
 
 * To run all features: rake
